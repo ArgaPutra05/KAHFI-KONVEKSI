@@ -2,13 +2,526 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=index.php">
-    <title>Redirecting to Kahfi Konveksi...</title>
-    <script>
-        window.location.href = "index.php";
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahfi Konveksi - Jasa Jahit &amp; Pembuatan Seragam Premium</title>
+    <meta name="description" content="Kahfi Konveksi adalah pusat pembuatan seragam, kemeja PDH/PDL, kaos, jaket, dan jas almamater berkualitas tinggi dengan harga konveksi terjangkau dan garansi 100%.">
+    <link rel="stylesheet" href="style.css?v=1788528466">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <p>Redirecting to <a href="index.php">index.php</a>...</p>
+
+    <!-- TOP ANNOUNCEMENT MARQUEE BAR -->
+    <div class="top-bar">
+        <div class="marquee-content">
+                                <span><i class="fas fa-shield-alt"></i> GARANSI RETUR 100% ATAU REVISI GRATIS</span>
+                                    <span><i class="fas fa-pencil-ruler"></i> FREE CONSULTATION &amp; DESAIN MOCKUP 3D</span>
+                                    <span><i class="fas fa-shipping-fast"></i> PENGERJAAN TEPAT WAKTU &amp; KIRIM SE-INDONESIA</span>
+                                    <span><i class="fas fa-tags"></i> HARGA DIRECT KONVEKSI TANPA PERANTARA</span>
+                                    <span><i class="fas fa-shield-alt"></i> GARANSI RETUR 100% ATAU REVISI GRATIS</span>
+                                    <span><i class="fas fa-pencil-ruler"></i> FREE CONSULTATION &amp; DESAIN MOCKUP 3D</span>
+                                    <span><i class="fas fa-shipping-fast"></i> PENGERJAAN TEPAT WAKTU &amp; KIRIM SE-INDONESIA</span>
+                                    <span><i class="fas fa-tags"></i> HARGA DIRECT KONVEKSI TANPA PERANTARA</span>
+                        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo">
+                Kahfi<span>Konveksi</span>
+            </a>
+            
+            <ul class="nav-links">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#keunggulan">Keunggulan</a></li>
+                                    <li><a href="#layanan">Layanan</a></li>
+                                    <li><a href="#bahan">Bahan Kain</a></li>
+                                    <li><a href="#produk">Katalog</a></li>
+                                    <li><a href="#alur">Alur Order</a></li>
+                                    <li><a href="#faq">FAQ</a></li>
+                            </ul>
+
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Ubah Mode Gelap / Terang">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="https://wa.me/628139120684?text=Halo+Kahfi+Konveksi%2C+saya+ingin+konsultasi+pemesanan+seragam." target="_blank" class="btn-primary">
+                    <i class="fab fa-whatsapp"></i> Konsultasi WA
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <div class="hero-tag">
+                    <span class="dot"></span>
+                    <span>TERPERCAYA SEJAK 2020 ΓÇó #Ramah #Amanah #Berkah</span>
+                </div>
+                <h1>Wujudkan Seragam Impian <br><span class="highlight-text">Kualitas Premium</span> & <span class="text-yellow">Harga Konveksi</span></h1>
+                <p>Solusi konveksi modern terpercaya untuk pembuatan Kaos, Kemeja PDH/PDL, Jaket, Rompi, dan Jas Almamater. Bebas pilih bahan, free konsultasi desain mockup, dengan jaminan mutu jahitan presisi.</p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/628139120684?text=Halo+Kahfi+Konveksi%2C+saya+ingin+konsultasi+pemesanan+seragam." target="_blank" class="btn-primary">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                    </a>
+                    <a href="#produk" class="btn-secondary">
+                        <i class="fas fa-images"></i> Lihat Hasil Produksi
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-card-main">
+                    <img src="jaket/jaket1.png" alt="Kahfi Konveksi Premium Apparel" class="hero-preview-img">
+                </div>
+                <!-- Floating Badges -->
+                <div class="hero-badge-float top-right">
+                    <div class="badge-icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="badge-text">
+                        <span>Total Pcs Diproduksi</span>
+                        <strong>10.000+ Pcs</strong>
+                    </div>
+                </div>
+                <div class="hero-badge-float bottom-left">
+                    <div class="badge-icon"><i class="fas fa-star"></i></div>
+                    <div class="badge-text">
+                        <span>Kepuasan Pelanggan</span>
+                        <strong>99.8% Rating High</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- KEUNGGULAN SECTION -->
+    <section id="keunggulan" class="why-us">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Mengapa Pilih Kahfi Konveksi?</span>
+                <h2 class="section-title">Keunggulan Utama Yang Kami Berikan</h2>
+                <p class="section-desc">Kami memahami ekspektasi Anda terhadap seragam berkualitas tinggi. Berikut adalah alasan mengapa ratusan instansi & komunitas mempercayakan produksinya kepada kami.</p>
+            </div>
+
+            <div class="features-grid">
+                                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Free Desain &amp; Mockup 3D</h3>
+                        <p>Belum punya desain? Tim desainer profesional kami siap membantu membuatkan gambar visualisasi 3D secara gratis sebelum produksi.</p>
+                    </div>
+                                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Garansi Retur 100%</h3>
+                        <p>Setiap produk melewati Quality Control berlapis. Jika ada cacat produksi atau kesalahan ukuran dari pihak kami, kami ganti 100%.</p>
+                    </div>
+                                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-cut"></i></div>
+                        <h3>Jahitan Double-Stitch Rapi</h3>
+                        <p>Menggunakan mesin jahit &amp; komputer modern dengan pola presisi, jahitan lebih rapat, kokoh, serta tahan dipakai bertahun-tahun.</p>
+                    </div>
+                                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                        <h3>Harga Direct Konveksi</h3>
+                        <p>Dapatkan penawaran harga terbaik langsung dari pabrik konveksi pertama tanpa biaya tersembunyi atau perantara broker.</p>
+                    </div>
+                                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-swatchbook"></i></div>
+                        <h3>Bebas Custom Bahan &amp; Warna</h3>
+                        <p>Pilihan katalog kain terlengkap mulai dari Combed, Drill, Ripstop, Taslan, hingga Fleece dengan ratusan varian warna kain.</p>
+                    </div>
+                                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-truck-loading"></i></div>
+                        <h3>Pengerjaan Cepat &amp; On-Time</h3>
+                        <p>Kapasitas produksi besar didukung sistem manajemen tepat waktu untuk memastikan pesanan Anda selesai sesuai jadwal deadline.</p>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    <!-- LAYANAN PRODUSEN -->
+    <section id="layanan" class="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Layanan Produksi Kami</span>
+                <h2 class="section-title">Kategori Seragam & Apparel</h2>
+                <p class="section-desc">Spesialis pembuatan berbagai jenis pakaian formal, casual, maupun atribut outdoor untuk organisasi, kantor, & event.</p>
+            </div>
+
+            <div class="services-grid">
+                                    <div class="service-card reveal">
+                        <span class="service-badge">POPULER</span>
+                        <div class="service-icon-wrap"><i class="fas fa-tshirt"></i></div>
+                        <h3>Kaos</h3>
+                        <p>Bahan Cotton Combed 24s/30s adem dengan opsi Sablon Plastisol, DTF, atau Bordir Komputer presisi.</p>
+                    </div>
+                                    <div class="service-card reveal">
+                        <span class="service-badge">BEST SELLER</span>
+                        <div class="service-icon-wrap"><i class="fas fa-user-tie"></i></div>
+                        <h3>Seragam Kantor / PDH</h3>
+                        <p>Kemeja kerja formal/semi-formal berpotongan ergonomis menggunakan bahan Nagata Drill &amp; American Drill.</p>
+                    </div>
+                                    <div class="service-card reveal">
+                        <span class="service-badge">OUTDOOR</span>
+                        <div class="service-icon-wrap"><i class="fas fa-user-ninja"></i></div>
+                        <h3>Kemeja PDL Lapangan</h3>
+                        <p>Kemeja tactical bahan Ripstop tahan sobek lengkap dengan ventilasi udara bagian belakang.</p>
+                    </div>
+                                    <div class="service-card reveal">
+                        <span class="service-badge">PREMIUM</span>
+                        <div class="service-icon-wrap"><i class="fas fa-vest-patches"></i></div>
+                        <h3>Jaket &amp; Hoodie</h3>
+                        <p>Jaket Bomber, Windbreaker, Coach Jacket, dan Hoodie Fleece tebal nyaman berstandar apparel clothing.</p>
+                    </div>
+                                    <div class="service-card reveal">
+                        <span class="service-badge">FORMAL</span>
+                        <div class="service-icon-wrap"><i class="fas fa-user-graduate"></i></div>
+                        <h3>Jas Almamater</h3>
+                        <p>Jas instansi &amp; kampus bahan High Twist / Taipan Drill berfuring halus dan menggunakan busa pundak profesional.</p>
+                    </div>
+                                    <div class="service-card reveal">
+                        <span class="service-badge">TACTICAL</span>
+                        <div class="service-icon-wrap"><i class="fas fa-vest"></i></div>
+                        <h3>Rompi Lapangan &amp; Event</h3>
+                        <p>Rompi kerja, rompi safety scotchlite, dan rompi organisasi dengan banyak saku fungsional.</p>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    <!-- INTERACTIVE MATERIAL SHOWCASE TABS -->
+    <section id="bahan" class="fabric-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Katalog Spesifikasi Bahan</span>
+                <h2 class="section-title">Pilih Bahan Kain Terbaik</h2>
+                <p class="section-desc">Klik pada tab bahan di bawah untuk melihat spesifikasi detail, karakteristik, dan indikator performa kain.</p>
+            </div>
+
+            <div class="fabric-tabs reveal">
+                                    <button class="btn-tab active" data-fabric="combed">
+                        Cotton Combed                    </button>
+                                    <button class="btn-tab " data-fabric="drill">
+                        Nagata / American Drill                    </button>
+                                    <button class="btn-tab " data-fabric="ripstop">
+                        Ripstop Tactical                    </button>
+                                    <button class="btn-tab " data-fabric="taslan">
+                        Taslan JN &amp; Fleece                    </button>
+                                    <button class="btn-tab " data-fabric="hightwist">
+                        High Twist Almamater                    </button>
+                            </div>
+
+                        <div class="fabric-content-box reveal">
+                <div class="fabric-info">
+                    <h3 id="fabricTitle">Cotton Combed 24s / 30s Premium</h3>
+                    <p id="fabricDesc">Bahan kaos 100% serat kapas murni. Memiliki tekstur super halus, menyerap keringat dengan sangat baik, adem, dan tidak berbulu saat dicuci.</p>
+                    
+                    <ul class="specs-list" id="fabricSpecs">
+                                                    <li><i class="fas fa-check-circle"></i> 100% Cotton Organic</li>
+                                                    <li><i class="fas fa-check-circle"></i> Gramasi: 170-190 gsm</li>
+                                                    <li><i class="fas fa-check-circle"></i> Sablon: Plastisol &amp; DTF High-Res</li>
+                                                    <li><i class="fas fa-check-circle"></i> Cocok untuk Event, Komunitas, Brand Distro</li>
+                                            </ul>
+                </div>
+
+                <div class="fabric-rating-grid">
+                    <div class="rating-item">
+                        <label>Tingkat Kenyamanan / Adem</label>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="fillBreathability" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <label>Ketahanan & Keawetan Bahan</label>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="fillDurability" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <label>Kelembutan Tekstur Fabrics</label>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="fillSoftness" style="width: 98%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- KATALOG HASIL PRODUKSI & GALERI -->
+    <section id="produk" class="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Portfolio Real Production</span>
+                <h2 class="section-title">Galeri Hasil Produksi Kami</h2>
+                <p class="section-desc">Klik pada kategori filter untuk melihat portfolio kami, atau **klik gambar produk** untuk membuka gallery viewer.</p>
+            </div>
+
+            <div class="filter-buttons reveal">
+                <button class="btn-filter active" data-target="semua">Semua Produk</button>
+                <button class="btn-filter" data-target="baju">Kaos / Baju</button>
+                <button class="btn-filter" data-target="pdh">Kemeja PDH</button>
+                <button class="btn-filter" data-target="pdl">Kemeja PDL</button>
+                <button class="btn-filter" data-target="jaket">Jaket & Hoodie</button>
+                <button class="btn-filter" data-target="jas">Jas Almamater</button>
+                <button class="btn-filter" data-target="jersey">Jersey</button>
+            </div>
+
+            <div class="products-grid">
+                                    <div class="product-item reveal" data-category="baju" data-images="kaos/ChatGPT Image Sep 14, 2026, 03_22_03 PM.png|kaos/ChatGPT Image Sep 14, 2026, 03_22_12 PM.png">
+                        <div class="product-img">
+                            <img src="kaos/ChatGPT Image Sep 14, 2026, 03_22_03 PM.png" alt="Kaos Combed &amp; Polo Shirt">
+                            <div class="img-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                                <span>Lihat 2 Foto Kaos</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kaos Combed &amp; Polo Shirt</h3>
+                            <p>Menggunakan bahan Cotton Combed 30s adem dengan sablon plastisol hd presisi tinggi anti pecah.</p>
+                        </div>
+                    </div>
+                                    <div class="product-item reveal" data-category="pdh" data-images="pdh/1.png|pdh/2.png|pdh/3.png|pdh/4.png|pdh/5.png|pdh/6.png|pdh/7.png|pdh/8.png|pdh/9.png|pdh/10.png|pdh/11.png|pdh/12.png|pdh/13.png|pdh/14.png|pdh/15.png|pdh/16.png|pdh/17.png|pdh/18.png|pdh/19.png|pdh/20.png|pdh/21.png|pdh/22.png">
+                        <div class="product-img">
+                            <img src="pdh/1.png" alt="Kemeja PDH">
+                            <div class="img-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                                <span>Lihat 22 Foto PDH</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kemeja PDH</h3>
+                            <p>Bahan American Drill dan Nagata Drill bermutu tinggi dengan bordir komputer tajam dan kancing tersembunyi.</p>
+                        </div>
+                    </div>
+                                    <div class="product-item reveal" data-category="pdl" data-images="pdl/ChatGPT Image Sep 14, 2026, 02_50_20 PM.png|pdl/ChatGPT Image Sep 14, 2026, 02_52_14 PM.png|pdl/pdl_1.png|pdl/pdl_2.png|pdl/pdl_3.png|pdl/pdl_4.png">
+                        <div class="product-img">
+                            <img src="pdl/ChatGPT Image Sep 14, 2026, 02_50_20 PM.png" alt="Kemeja PDL Tactical">
+                            <div class="img-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                                <span>Lihat 6 Foto PDL</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kemeja PDL Tactical</h3>
+                            <p>Kain Ripstop kokoh tahan sobek, saku velcro serbaguna, dan jaring sistem sirkulasi udara.</p>
+                        </div>
+                    </div>
+                                    <div class="product-item reveal" data-category="jaket" data-images="jaket/jaket1.png|jaket/jaket2.png|jaket/jaket3.png|jaket/jaket4.png|jaket/jaket5.png|jaket/jaket6.png">
+                        <div class="product-img">
+                            <img src="jaket/jaket1.png" alt="Jaket">
+                            <div class="img-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                                <span>Lihat 6 Foto Jaket</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Jaket</h3>
+                            <p>Bahan Taslan JN anti angin dengan inner furing cotton adem, zipper YKK anti macet.</p>
+                        </div>
+                    </div>
+                                    <div class="product-item reveal" data-category="jas" data-images="almamater/Desain tanpa judul - 2025-12-17T114623.132.png|almamater/Gemini_Generated_Image_6fxrmv6fxrmv6fxr.jpg.jpe|almamater/Gemini_Generated_Image_fqju2cfqju2cfqju.jpg.jpe">
+                        <div class="product-img">
+                            <img src="almamater/Desain tanpa judul - 2025-12-17T114623.132.png" alt="Jas Almamater Kampus">
+                            <div class="img-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                                <span>Lihat 3 Foto Almamater</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Jas Almamater Kampus</h3>
+                            <p>Bahan High Twist premium dengan finishing semi-jas resmi, full furing, dan busa bahu.</p>
+                        </div>
+                    </div>
+                                    <div class="product-item reveal" data-category="jersey" data-images="jersey/Salinan 67.png|jersey/Salinan 68.png|jersey/Salinan 69.png|jersey/Salinan 71.png|jersey/Salinan 73.png|jersey/Salinan 75.png|jersey/Salinan 76.png|jersey/Salinan 77.png|jersey/Salinan 78.png|jersey/Salinan 82.png|jersey/Salinan 83.png|jersey/Salinan 84.png|jersey/Salinan 85.png|jersey/Salinan 1759974814077.jpg|jersey/Salinan 1759975014922.jpg|jersey/Salinan 1759975014937.jpg|jersey/Salinan 1759975014949.jpg|jersey/Salinan 1759975014964.jpg|jersey/Salinan 1759975014978.jpg|jersey/Salinan 1759975014991.jpg|jersey/Salinan IMG-20250819-WA0014.jpg|jersey/Salinan IMG-20250819-WA0016.jpg|jersey/Salinan IMG-20250819-WA0017.jpg|jersey/Salinan IMG-20250819-WA0029.jpg|jersey/Salinan IMG-20250819-WA0033.jpg|jersey/Salinan IMG-20250819-WA0069.jpg|jersey/Salinan IMG-20250918-WA0041.jpg|jersey/Salinan IMG-20250918-WA0056.jpg|jersey/Salinan _storage_emulated_0_Android_data_com.miui.gallery_cache_SecurityShare_1759974666496.jpg">
+                        <div class="product-img">
+                            <img src="jersey/Salinan 67.png" alt="Jersey Printing Custom">
+                            <div class="img-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                                <span>Lihat 29 Foto Jersey</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Jersey Printing Custom</h3>
+                            <p>Bahan Dryfit / Milano adem menyerap keringat dengan teknik Full Print Sublimasi warna tajam &amp; tidak luntur.</p>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    <!-- ALUR ORDER / PROCESS TIMELINE -->
+    <section id="alur" class="timeline-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Prosedur Pemesanan Transparan</span>
+                <h2 class="section-title">7 Langkah Mudah Pesan Seragam</h2>
+                <p class="section-desc">Alur pemesanan jelas dan terpercaya dari konsultasi bersama MinKaf hingga pengiriman produk ke tangan Anda.</p>
+            </div>
+
+            <div class="timeline-grid">
+                                    <div class="timeline-step reveal">
+                        <div class="step-num">1</div>
+                                                    <div class="step-icon"><i class="fas fa-comments"></i></div>
+                                                <h3>Konsultasi Dengan MinKaf</h3>
+                        <p>Diskusikan ide, kebutuhan seragam, dan konsep pakaian bersama Admin MinKaf.</p>
+                    </div>
+                                    <div class="timeline-step reveal">
+                        <div class="step-num">2</div>
+                                                    <div class="step-icon"><i class="fas fa-palette"></i></div>
+                                                <h3>DP 100K Masuk Proses Desain</h3>
+                        <p>Pembayaran komitmen awal Rp 100.000 untuk pembuatan visualisasi desain / mockup 3D.</p>
+                    </div>
+                                    <div class="timeline-step reveal">
+                        <div class="step-num">3</div>
+                                                    <div class="step-icon"><i class="fas fa-clipboard-check"></i></div>
+                                                <h3>Finalisasi Design, Jumlah, &amp; Bahan</h3>
+                        <p>Penyempurnaan mockup 3D, penentuan pilihan bahan kain, size chart, dan total kuantitas.</p>
+                    </div>
+                                    <div class="timeline-step reveal">
+                        <div class="step-num">4</div>
+                                                    <div class="step-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                                                <h3>Konfirmasi Order &amp; DP 50%</h3>
+                        <p>Konfirmasi kesepakatan order resmi dan pembayaran DP produksi sebesar 50%.</p>
+                    </div>
+                                    <div class="timeline-step reveal">
+                        <div class="step-num">5</div>
+                                                    <div class="step-icon"><i class="fas fa-industry"></i></div>
+                                                <h3>Proses Produksi Hingga Selesai</h3>
+                        <p>Proses pemotongan bahan, pembordiran/sablon, penjahitan presisi, dan Quality Control berlapis.</p>
+                    </div>
+                                    <div class="timeline-step reveal">
+                        <div class="step-num">6</div>
+                                                    <div class="step-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                                                <h3>Pelunasan</h3>
+                        <p>Inspeksi hasil fisik produk produksi dan pembayaran pelunasan sisa tagihan pesanan.</p>
+                    </div>
+                                    <div class="timeline-step reveal">
+                        <div class="step-num">7</div>
+                                                    <div class="step-icon"><i class="fas fa-shipping-fast"></i></div>
+                                                <h3>Pengiriman Ke Alamat Tujuan</h3>
+                        <p>Pengemasan rapi dan pengiriman pesanan ke alamat tujuan Anda di seluruh Indonesia.</p>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    <!-- STATS COUNTER -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+                            <div class="stat-item reveal">
+                    <h3 class="stat-counter" data-target="10000" data-suffix="+">0</h3>
+                    <p>Pcs Seragam Diproduksi</p>
+                </div>
+                            <div class="stat-item reveal">
+                    <h3 class="stat-counter" data-target="200" data-suffix="+">0</h3>
+                    <p>Klien Instansi &amp; Komunitas</p>
+                </div>
+                            <div class="stat-item reveal">
+                    <h3 class="stat-counter" data-target="99" data-suffix=".8%">0</h3>
+                    <p>Ketepatan Waktu Delivery</p>
+                </div>
+                            <div class="stat-item reveal">
+                    <h3 class="stat-counter" data-target="100" data-suffix="%">0</h3>
+                    <p>Garansi Kualitas Retur</p>
+                </div>
+                    </div>
+    </section>
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Pertanyaan Umum</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Jawaban singkat untuk pertanyaan yang paling sering ditanyakan oleh calon pemesan.</p>
+            </div>
+
+            <div class="faq-container reveal">
+                                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span>Berapa minimal order quantity (MOQ) di Kahfi Konveksi?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" style="display: block;">
+                            Minimal order untuk Kaos, Kemeja PDH/PDL, dan Jaket adalah 12 pcs per desain. Semakin banyak jumlah pesanan Anda, semakin murah harga per pcs yang didapatkan.                        </div>
+                    </div>
+                                    <div class="faq-item ">
+                        <div class="faq-question">
+                            <span>Berapa lama estimasi waktu pengerjaan produksi?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" style="">
+                            Waktu pengerjaan standar adalah 14-21 hari kerja tergantung jumlah pesanan dan kompleksitas desain. Kami juga melayani pengerjaan kilat/express sesuai kesepakatan.                        </div>
+                    </div>
+                                    <div class="faq-item ">
+                        <div class="faq-question">
+                            <span>Apakah bisa bantu buatkan desain jika belum punya mockup?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" style="">
+                            Tentu saja! Tim desainer Kahfi Konveksi akan membantu membuatkan visualisasi mockup 3D secara <strong>GRATIS</strong> hingga sesuai dengan keinginan Anda.                        </div>
+                    </div>
+                                    <div class="faq-item ">
+                        <div class="faq-question">
+                            <span>Bagaimana sistem garansi jika ada barang yang rusak / cacat?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer" style="">
+                            Kami memberikan garansi 100% perbaikan atau ganti baru secara gratis jika terjadi cacat jahitan, salah warna, atau ukuran yang tidak sesuai kesepakatan awal.                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    <!-- CONTACT & FOOTER SECTION -->
+    <section id="kontak" class="contact-section">
+        <div class="container reveal">
+            <span class="section-subtitle">Konsultasi Desain & Penawaran Gratis</span>
+            <h2 class="section-title">Siap Wujudkan Seragam Impian Anda?</h2>
+            <p class="section-desc" style="max-width: 600px; margin: 0 auto;">Punya pertanyaan mengenai jenis bahan, size chart, atau ingin nego harga grosir? Hubungi tim kami via WhatsApp sekarang juga!</p>
+
+            <div class="social-links">
+                <a href="https://wa.me/628139120684?text=Halo+Kahfi+Konveksi%2C+saya+ingin+konsultasi+pemesanan+seragam." target="_blank" class="card-link wa">
+                    <i class="fab fa-whatsapp fa-lg"></i>
+                    <span>Chat Via WhatsApp</span>
+                </a>
+
+                <a href="https://instagram.com/kahfi.konveksi" target="_blank" class="card-link ig">
+                    <i class="fab fa-instagram fa-lg"></i>
+                    <span>@kahfi.konveksi</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kahfi Konveksi. All Rights Reserved. Masterpiece Garment & Apparel Production.</p>
+        </div>
+    </footer>
+    <!-- FLOATING ACTIONS -->
+    <a href="https://wa.me/628139120684?text=Halo+Kahfi+Konveksi%2C+saya+ingin+konsultasi+pemesanan+seragam." target="_blank" class="floating-wa" title="Konsultasi WA Fast Response">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button id="backToTop" class="back-to-top" title="Kembali ke Atas">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- MODAL GALLERY LIGHTBOX -->
+    <div id="galleryModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content">
+            <button class="modal-prev" aria-label="Gambar Sebelumnya"><i class="fas fa-chevron-left"></i></button>
+            <img id="modalImage" src="" alt="Hasil Produksi Terpilih">
+            <button class="modal-next" aria-label="Gambar Selanjutnya"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div id="modalCaption"></div>
+        <div id="modalCounter" class="modal-counter"></div>
+    </div>
+
+    <!-- Inject Dynamic Fabric Data from PHP to JS -->
+    <script>
+        window.PHP_FABRIC_DATA = {"combed":{"name":"Cotton Combed","title":"Cotton Combed 24s \/ 30s Premium","desc":"Bahan kaos 100% serat kapas murni. Memiliki tekstur super halus, menyerap keringat dengan sangat baik, adem, dan tidak berbulu saat dicuci.","specs":["100% Cotton Organic","Gramasi: 170-190 gsm","Sablon: Plastisol & DTF High-Res","Cocok untuk Event, Komunitas, Brand Distro"],"breathability":95,"durability":88,"softness":98},"drill":{"name":"Nagata \/ American Drill","title":"American & Nagata Drill","desc":"Kain bertulang diagonal yang kokoh, tidak gampang kusut, serta memiliki warna yang tahan lama. Pilihan nomor 1 untuk Kemeja PDH\/PDL.","specs":["Campuran Cotton & Polyester High Density","Bordir Komputer Presisi Tinggi","Tahan Gesekan & Cuci Berulang","Cocok untuk Seragam Kantor, Kampus, & Organisasi"],"breathability":85,"durability":96,"softness":82},"ripstop":{"name":"Ripstop Tactical","title":"Ripstop Outdoor Tactical","desc":"Kain dengan struktur serat kotak-kotak khusus anti-sobek. Sangat kuat untuk aktivitas luar ruangan dan kondisi ekstrem.","specs":["Serat Sintetis Anti Tear (Tahan Sobek)","Fitur Air-Ventilaion System","Water-repellent Coating Available","Cocok untuk PDL Lapangan, Komunitas Outdoor"],"breathability":80,"durability":99,"softness":75},"taslan":{"name":"Taslan JN & Fleece","title":"Taslan JN & Fleece Premium","desc":"Bahan jaket berteknologi windproof & water-resistant. Dilengkapi dengan furing jaring atau hyget adem di bagian dalam.","specs":["Waterproof & Windproof Level Medium-High","Inner Furing Adem \/ Cotton Fleece","Bordir \/ Emblem Kustom","Cocok untuk Jaket Bombers, Windbreaker, Coach"],"breathability":78,"durability":94,"softness":86},"hightwist":{"name":"High Twist Almamater","title":"High Twist Premium Semi-Jas","desc":"Kain halus berkilau elegan, jatuhnya rapi di badan, dan memberikan kesan sangat formal & profesional untuk almamater.","specs":["Tampilan Glossy Rapi","Dilengkapi Padded Shoulder (Busa Pundak)","Full Furing Satin Silk Inner","Cocok untuk Jas Almamater Kampus & Sekolah"],"breathability":82,"durability":92,"softness":90}};
+    </script>
+
+    <!-- SCRIPTS -->
+    <script src="script.js?v=1789311950"></script>
 </body>
 </html>
