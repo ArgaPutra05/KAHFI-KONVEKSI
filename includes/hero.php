@@ -4,7 +4,7 @@
             <div class="hero-content reveal">
                 <div class="hero-tag">
                     <span class="dot"></span>
-                    <span>TERPERCAYA SEJAK 2020 • <?php echo htmlspecialchars($site_slogan); ?></span>
+                    <span>TERPERCAYA SEJAK 2020 &bull; <?php echo htmlspecialchars($site_slogan); ?></span>
                 </div>
                 <h1>Wujudkan Seragam Impian <br><span class="highlight-text">Kualitas Premium</span> & <span class="text-yellow">Harga Konveksi</span></h1>
                 <p>Solusi konveksi modern terpercaya untuk pembuatan Kaos, Kemeja PDH/PDL, Jaket, Rompi, dan Jas Almamater. Bebas pilih bahan, free konsultasi desain mockup, dengan jaminan mutu jahitan presisi.</p>
