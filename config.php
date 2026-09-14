@@ -13,52 +13,42 @@ $ig_username = "kahfi.konveksi";
 $ig_link = "https://instagram.com/" . $ig_username;
 $current_year = date("Y");
 
-// Automatically scan image files for PDH and Jaket galleries
-$pdh_images_files = glob("pdh/*.{png,jpg,jpeg,webp,PNG,JPG,JPEG,WEBP}", GLOB_BRACE);
-if (!empty($pdh_images_files)) {
-    natsort($pdh_images_files);
-    $pdh_images_files = array_values($pdh_images_files);
+// Helper function to safely scan image files for galleries
+function get_gallery_images($dir) {
+    $dir_path = __DIR__ . '/' . $dir;
+    $files = glob($dir_path . '/*.{png,jpg,jpeg,webp,jpe,PNG,JPG,JPEG,WEBP}', GLOB_BRACE);
+    if (!is_array($files)) {
+        return [];
+    }
+    // Convert absolute path back to relative path for HTML src
+    $relative_files = array_map(function($f) use ($dir) {
+        return $dir . '/' . basename($f);
+    }, $files);
+    natsort($relative_files);
+    return array_values($relative_files);
 }
+
+$pdh_images_files = get_gallery_images('pdh');
 $pdh_images_list = !empty($pdh_images_files) ? implode('|', $pdh_images_files) : '';
 $pdh_first_img = !empty($pdh_images_files) ? $pdh_images_files[0] : 'pdh/1.png';
 
-$jaket_images_files = glob("jaket/*.{png,jpg,jpeg,webp,PNG,JPG,JPEG,WEBP}", GLOB_BRACE);
-if (!empty($jaket_images_files)) {
-    natsort($jaket_images_files);
-    $jaket_images_files = array_values($jaket_images_files);
-}
+$jaket_images_files = get_gallery_images('jaket');
 $jaket_images_list = !empty($jaket_images_files) ? implode('|', $jaket_images_files) : '';
 $jaket_first_img = !empty($jaket_images_files) ? $jaket_images_files[0] : 'jaket/jaket1.png';
 
-$jersey_images_files = glob("jersey/*.{png,jpg,jpeg,webp,PNG,JPG,JPEG,WEBP}", GLOB_BRACE);
-if (!empty($jersey_images_files)) {
-    natsort($jersey_images_files);
-    $jersey_images_files = array_values($jersey_images_files);
-}
+$jersey_images_files = get_gallery_images('jersey');
 $jersey_images_list = !empty($jersey_images_files) ? implode('|', $jersey_images_files) : 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800';
 $jersey_first_img = !empty($jersey_images_files) ? $jersey_images_files[0] : 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=600';
 
-$almamater_images_files = glob("almamater/*.{png,jpg,jpeg,webp,jpe,PNG,JPG,JPEG,WEBP}", GLOB_BRACE);
-if (!empty($almamater_images_files)) {
-    natsort($almamater_images_files);
-    $almamater_images_files = array_values($almamater_images_files);
-}
+$almamater_images_files = get_gallery_images('almamater');
 $almamater_images_list = !empty($almamater_images_files) ? implode('|', $almamater_images_files) : 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800';
 $almamater_first_img = !empty($almamater_images_files) ? $almamater_images_files[0] : 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600';
 
-$kaos_images_files = glob("kaos/*.{png,jpg,jpeg,webp,jpe,PNG,JPG,JPEG,WEBP}", GLOB_BRACE);
-if (!empty($kaos_images_files)) {
-    natsort($kaos_images_files);
-    $kaos_images_files = array_values($kaos_images_files);
-}
+$kaos_images_files = get_gallery_images('kaos');
 $kaos_images_list = !empty($kaos_images_files) ? implode('|', $kaos_images_files) : 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800|https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=800';
 $kaos_first_img = !empty($kaos_images_files) ? $kaos_images_files[0] : 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600';
 
-$pdl_images_files = glob("pdl/*.{png,jpg,jpeg,webp,jpe,PNG,JPG,JPEG,WEBP}", GLOB_BRACE);
-if (!empty($pdl_images_files)) {
-    natsort($pdl_images_files);
-    $pdl_images_files = array_values($pdl_images_files);
-}
+$pdl_images_files = get_gallery_images('pdl');
 $pdl_images_list = !empty($pdl_images_files) ? implode('|', $pdl_images_files) : 'https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?q=80&w=800';
 $pdl_first_img = !empty($pdl_images_files) ? $pdl_images_files[0] : 'https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?q=80&w=600';
 
