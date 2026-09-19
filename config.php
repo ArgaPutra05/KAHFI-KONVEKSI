@@ -151,6 +151,7 @@ $fabrics = [
         'name' => 'Cotton Combed',
         'title' => 'Cotton Combed 24s / 30s Premium',
         'desc' => 'Bahan kaos 100% serat kapas murni. Memiliki tekstur super halus, menyerap keringat dengan sangat baik, adem, dan tidak berbulu saat dicuci.',
+        'image' => 'bahan/combed.jpg',
         'specs' => [
             '100% Cotton Organic',
             'Gramasi: 170-190 gsm',
@@ -165,6 +166,7 @@ $fabrics = [
         'name' => 'Nagata / American Drill',
         'title' => 'American & Nagata Drill',
         'desc' => 'Kain bertulang diagonal yang kokoh, tidak gampang kusut, serta memiliki warna yang tahan lama. Pilihan nomor 1 untuk Kemeja PDH/PDL.',
+        'image' => 'bahan/drill.jpg',
         'specs' => [
             'Campuran Cotton & Polyester High Density',
             'Bordir Komputer Presisi Tinggi',
@@ -179,6 +181,7 @@ $fabrics = [
         'name' => 'Ripstop Tactical',
         'title' => 'Ripstop Outdoor Tactical',
         'desc' => 'Kain dengan struktur serat kotak-kotak khusus anti-sobek. Sangat kuat untuk aktivitas luar ruangan dan kondisi ekstrem.',
+        'image' => 'bahan/ripstop.jpg',
         'specs' => [
             'Serat Sintetis Anti Tear (Tahan Sobek)',
             'Fitur Air-Ventilaion System',
@@ -193,6 +196,7 @@ $fabrics = [
         'name' => 'Taslan JN & Fleece',
         'title' => 'Taslan JN & Fleece Premium',
         'desc' => 'Bahan jaket berteknologi windproof & water-resistant. Dilengkapi dengan furing jaring atau hyget adem di bagian dalam.',
+        'image' => 'bahan/taslan.jpg',
         'specs' => [
             'Waterproof & Windproof Level Medium-High',
             'Inner Furing Adem / Cotton Fleece',
@@ -207,6 +211,7 @@ $fabrics = [
         'name' => 'High Twist Almamater',
         'title' => 'High Twist Premium Semi-Jas',
         'desc' => 'Kain halus berkilau elegan, jatuhnya rapi di badan, dan memberikan kesan sangat formal & profesional untuk almamater.',
+        'image' => 'bahan/hightwist.jpg',
         'specs' => [
             'Tampilan Glossy Rapi',
             'Dilengkapi Padded Shoulder (Busa Pundak)',
@@ -327,7 +332,7 @@ $faqs = [
     ],
     [
         'question' => 'Berapa lama estimasi waktu pengerjaan produksi?',
-        'answer' => 'Waktu pengerjaan standar adalah 14-21 hari kerja tergantung jumlah pesanan dan kompleksitas desain. Kami juga melayani pengerjaan kilat/express sesuai kesepakatan.',
+        'answer' => 'Waktu pengerjaan standar adalah 10 hari kerja tergantung jumlah pesanan dan kompleksitas desain. Kami juga melayani pengerjaan kilat/express sesuai kesepakatan.',
         'active' => false
     ],
     [

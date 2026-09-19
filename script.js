@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'combed': {
             title: 'Cotton Combed 24s / 30s Premium',
             desc: 'Bahan kaos 100% serat kapas murni. Memiliki tekstur super halus, menyerap keringat dengan sangat baik, adem, dan tidak berbulu.',
+            image: 'bahan/combed.jpg',
             specs: ['100% Cotton Organic', 'Gramasi: 170-190 gsm', 'Sablon: Plastisol & DTF High-Res', 'Cocok untuk Event, Komunitas, Brand Distro'],
             breathability: 95,
             durability: 88,
@@ -102,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'drill': {
             title: 'American & Nagata Drill',
             desc: 'Kain bertulang diagonal yang kokoh, tidak gampang kusut, serta memiliki warna yang tahan lama. Pilihan nomor 1 untuk Kemeja PDH/PDL.',
+            image: 'bahan/drill.jpg',
             specs: ['Campuran Cotton & Polyester High Density', 'Bordir Komputer Presisi Tinggi', 'Tahan Gesekan & Cuci Berulang', 'Cocok untuk Seragam Kantor, Kampus, & Organisasi'],
             breathability: 85,
             durability: 96,
@@ -110,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'ripstop': {
             title: 'Ripstop Outdoor Tactical',
             desc: 'Kain dengan struktur serat kotak-kotak khusus anti-sobek. Sangat kuat untuk aktivitas luar ruangan dan kondisi ekstrem.',
+            image: 'bahan/ripstop.jpg',
             specs: ['Serat Sintetis Anti Tear (Tahan Sobek)', 'Fitur Air-Ventilaion System', 'Water-repellent Coating Available', 'Cocok untuk PDL Lapangan, Komunitas Outdoor'],
             breathability: 80,
             durability: 99,
@@ -118,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'taslan': {
             title: 'Taslan JN & Fleece Premium',
             desc: 'Bahan jaket berteknologi windproof & water-resistant. Dilengkapi dengan furing jaring atau hyget adem di bagian dalam.',
+            image: 'bahan/taslan.jpg',
             specs: ['Waterproof & Windproof Level Medium-High', 'Inner Furing Adem / Cotton Fleece', 'Bordir / Emblem Kustom', 'Cocok untuk Jaket Bombers, Windbreaker, Coach'],
             breathability: 78,
             durability: 94,
@@ -126,6 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'hightwist': {
             title: 'High Twist Premium Semi-Jas',
             desc: 'Kain halus berkilau elegan, jatuhnya rapi di badan, dan memberikan kesan sangat formal & profesional untuk almamater.',
+            image: 'bahan/hightwist.jpg',
             specs: ['Tampilan Glossy Rapi', 'Dilengkapi Padded Shoulder (Busa Pundak)', 'Full Furing Satin Silk Inner', 'Cocok untuk Jas Almamater Kampus & Sekolah'],
             breathability: 82,
             durability: 92,
@@ -137,6 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fabricTitle = document.getElementById('fabricTitle');
     const fabricDesc = document.getElementById('fabricDesc');
     const fabricSpecs = document.getElementById('fabricSpecs');
+    const fabricImg = document.getElementById('fabricImg');
     const fillBreathability = document.getElementById('fillBreathability');
     const fillDurability = document.getElementById('fillDurability');
     const fillSoftness = document.getElementById('fillSoftness');
@@ -149,8 +155,25 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = tab.getAttribute('data-fabric');
             const data = fabricData[key];
             const fabricInfo = document.querySelector('.fabric-info');
+            const fabricImgCard = document.querySelector('.fabric-image-card');
 
             if (data && fabricTitle) {
+                if (fabricImg && data.image) {
+                    if (fabricImgCard) {
+                        fabricImgCard.style.opacity = '0.3';
+                        fabricImgCard.style.transform = 'scale(0.96)';
+                    }
+                    setTimeout(() => {
+                        fabricImg.src = data.image;
+                        fabricImg.alt = `Tekstur Serat Kain ${data.name || data.title}`;
+                        if (fabricImgCard) {
+                            fabricImgCard.style.opacity = '1';
+                            fabricImgCard.style.transform = 'scale(1)';
+                            fabricImgCard.style.transition = 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)';
+                        }
+                    }, 120);
+                }
+
                 if (fabricInfo) {
                     fabricInfo.style.opacity = '0';
                     fabricInfo.style.transform = 'translateX(-20px)';

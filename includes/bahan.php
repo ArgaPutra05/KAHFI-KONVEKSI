@@ -23,6 +23,16 @@
 
             <?php $default_fabric = reset($fabrics); ?>
             <div class="fabric-content-box reveal">
+                <div class="fabric-image-wrapper">
+                    <div class="fabric-image-card">
+                        <img id="fabricImg" src="<?php echo htmlspecialchars($default_fabric['image']); ?>" alt="Tekstur Serat Kain <?php echo htmlspecialchars($default_fabric['name']); ?>" loading="lazy">
+                        <div class="fabric-badge">
+                            <i class="fas fa-search-plus"></i> Serat Kain
+                        </div>
+                    </div>
+                    <span class="fabric-img-caption">Detail Serat Micro High-Res</span>
+                </div>
+
                 <div class="fabric-info">
                     <h3 id="fabricTitle"><?php echo htmlspecialchars($default_fabric['title']); ?></h3>
                     <p id="fabricDesc"><?php echo htmlspecialchars($default_fabric['desc']); ?></p>
