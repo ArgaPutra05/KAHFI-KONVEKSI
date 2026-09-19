@@ -158,13 +158,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const fabricImgCard = document.querySelector('.fabric-image-card');
 
             if (data && fabricTitle) {
-                if (fabricImg && data.image) {
+                const imageSrc = (data && data.image) ? data.image : `bahan/${key}.jpg`;
+                if (fabricImg) {
                     if (fabricImgCard) {
                         fabricImgCard.style.opacity = '0.3';
                         fabricImgCard.style.transform = 'scale(0.96)';
                     }
                     setTimeout(() => {
-                        fabricImg.src = data.image;
+                        fabricImg.src = imageSrc;
                         fabricImg.alt = `Tekstur Serat Kain ${data.name || data.title}`;
                         if (fabricImgCard) {
                             fabricImgCard.style.opacity = '1';
