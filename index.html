@@ -39,16 +39,12 @@
                                     <li><a href="#bahan">Bahan Kain</a></li>
                                     <li><a href="#produk">Katalog</a></li>
                                     <li><a href="#alur">Alur Order</a></li>
-                                    <li><a href="#faq">FAQ</a></li>
                             </ul>
 
             <div style="display: flex; align-items: center; gap: 12px;">
                 <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Ubah Mode Gelap / Terang">
                     <i class="fas fa-moon"></i>
                 </button>
-                <a href="https://wa.me/628139120684?text=Halo+Kahfi+Konveksi%2C+saya+ingin+konsultasi+pemesanan+seragam." target="_blank" class="btn-primary">
-                    <i class="fab fa-whatsapp"></i> Konsultasi WA
-                </a>
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -69,8 +65,8 @@
                     <a href="https://wa.me/628139120684?text=Halo+Kahfi+Konveksi%2C+saya+ingin+konsultasi+pemesanan+seragam." target="_blank" class="btn-primary">
                         <i class="fab fa-whatsapp"></i> Order via WhatsApp
                     </a>
-                    <a href="#produk" class="btn-secondary">
-                        <i class="fas fa-images"></i> Lihat Hasil Produksi
+                    <a href="#lokasi" class="btn-secondary">
+                        <i class="fas fa-map-marker-alt"></i> Lokasi & Rating Google
                     </a>
                 </div>
             </div>
@@ -87,11 +83,11 @@
                         <strong>10.000+ Pcs</strong>
                     </div>
                 </div>
-                <div class="hero-badge-float bottom-left">
-                    <div class="badge-icon"><i class="fas fa-star"></i></div>
+                <div class="hero-badge-float bottom-left google-hero-badge">
+                    <div class="badge-icon google-icon"><i class="fab fa-google"></i></div>
                     <div class="badge-text">
-                        <span>Kepuasan Pelanggan</span>
-                        <strong>99.8% Rating High</strong>
+                        <span>Google Business Rating</span>
+                        <strong>5,0 <i class="fas fa-star" style="color: #eab308; font-size: 13px;"></i> (135 Ulasan)</strong>
                     </div>
                 </div>
             </div>
@@ -416,23 +412,23 @@
     <!-- STATS COUNTER -->
     <section class="stats-section">
         <div class="container stats-grid">
-                            <div class="stat-item reveal">
-                    <h3 class="stat-counter" data-target="10000" data-suffix="+">0</h3>
-                    <p>Pcs Seragam Diproduksi</p>
-                </div>
-                            <div class="stat-item reveal">
-                    <h3 class="stat-counter" data-target="200" data-suffix="+">0</h3>
-                    <p>Klien Instansi &amp; Komunitas</p>
-                </div>
-                            <div class="stat-item reveal">
-                    <h3 class="stat-counter" data-target="99" data-suffix=".8%">0</h3>
-                    <p>Ketepatan Waktu Delivery</p>
-                </div>
-                            <div class="stat-item reveal">
-                    <h3 class="stat-counter" data-target="100" data-suffix="%">0</h3>
-                    <p>Garansi Kualitas Retur</p>
-                </div>
-                    </div>
+            <div class="stat-item reveal">
+                <h3 class="stat-counter" data-target="10000" data-suffix="+">0</h3>
+                <p>Pcs Seragam Diproduksi</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3 class="stat-counter" data-target="135" data-suffix="+">0</h3>
+                <p>Ulasan Bintang 5 di Google Maps</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3 class="stat-counter" data-target="200" data-suffix="+">0</h3>
+                <p>Klien Instansi &amp; Komunitas</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3 class="stat-counter" data-target="100" data-suffix="%">0</h3>
+                <p>Garansi Kualitas Retur</p>
+            </div>
+        </div>
     </section>
     <!-- FAQ SECTION -->
     <section id="faq" class="faq-section">
@@ -479,6 +475,139 @@
                             </div>
         </div>
     </section>
+    <!-- GOOGLE RATING & LOKASI WORKSHOP SECTION -->
+    <section id="lokasi" class="location-section">
+        <div class="container reveal">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fab fa-google"></i> Google Business Profile</span>
+                <h2 class="section-title">Rating Pelanggan & Lokasi Workshop</h2>
+                <p class="section-desc">Kunjungi workshop kami di Kartasura atau lihat ulasan asli pelanggan kami di Google Maps.</p>
+            </div>
+
+            <div class="location-grid">
+                <!-- Left Column: Google Rating & Featured Review Card -->
+                <div class="google-review-box">
+                    <div class="google-rating-header">
+                        <div class="google-brand">
+                            <i class="fab fa-google google-g-logo"></i>
+                            <div>
+                                <h3>Kahfi Konveksi</h3>
+                                <p class="google-address-subtitle"><i class="fas fa-map-marker-alt"></i> Kartasura, Sukoharjo, Jawa Tengah</p>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Kahfi+Konveksi+Gg.+Sayuran+III+RT.02/RW.09+Dusun+IV+Kartasura+Sukoharjo" target="_blank" class="btn-google-review">
+                            <i class="fas fa-pen"></i> Tulis ulasan
+                        </a>
+                    </div>
+
+                    <div class="rating-summary-bar">
+                        <span class="rating-score">5,0</span>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-count">135 ulasan</span>
+                    </div>
+
+                    <!-- Topic Filter Pills from Screenshot -->
+                    <div class="review-topic-pills">
+                        <span class="topic-pill active">Semua</span>
+                        <span class="topic-pill">neat stitching <small>12</small></span>
+                        <span class="topic-pill">uniform <small>17</small></span>
+                        <span class="topic-pill">small party uniforms <small>2</small></span>
+                        <span class="topic-pill">uniform making <small>4</small></span>
+                    </div>
+
+                    <!-- Real Customer Review Card (Gideon) -->
+                    <div class="google-review-card">
+                        <div class="reviewer-profile">
+                            <div class="avatar-wrapper">
+                                <img src="https://ui-avatars.com/api/?name=Gideon&background=eab308&color=0f172a&bold=true" alt="Gideon Ulasan Google" class="reviewer-avatar">
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Gideon</h4>
+                                <span class="reviewer-meta">1 ulasan</span>
+                            </div>
+                            <i class="fab fa-google reviewer-google-icon" title="Verified Google Review"></i>
+                        </div>
+                        <div class="review-stars-line">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-date">sebulan lalu</span>
+                        </div>
+                        <p class="review-text">"pelayanan di kahfi knveksi sangat baik dan responsif. hasil konveksinya juga rapi, sesuai pesanan, dan kualitas bahannya bagus."</p>
+                    </div>
+
+                    <div class="google-action-footer">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Kahfi+Konveksi+Gg.+Sayuran+III+RT.02/RW.09+Dusun+IV+Kartasura+Sukoharjo" target="_blank" class="btn-maps-link">
+                            <i class="fas fa-external-link-alt"></i> Lihat Semua 135 Ulasan di Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Workshop Address & Interactive Map -->
+                <div class="location-details-box">
+                    <div class="address-card">
+                        <div class="address-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="address-content">
+                            <h3>Alamat Workshop Kahfi Konveksi</h3>
+                            <p class="full-address">Gg. Sayuran III, RT.02/RW.09, Dusun IV, Kartasura, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57161, Indonesia</p>
+                            <div class="address-meta">
+                                <span><i class="far fa-clock"></i> Senin - Sabtu: 08.00 - 17.00 WIB</span>
+                            </div>
+                            <div class="address-cta">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Kahfi+Konveksi+Gg.+Sayuran+III+RT.02/RW.09+Dusun+IV+Kartasura+Sukoharjo" target="_blank" class="btn-directions">
+                                    <i class="fas fa-directions"></i> Petunjuk Arah (Google Maps)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Google Map -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.056606822838!2d110.74102927499696!3d-7.568772092445199!2m3!1f0!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a151b752765d7%3A0x6a6d6d3765e9c0b1!2sKartasura%2C%20Sukoharjo!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" 
+                            width="100%" 
+                            height="280" 
+                            style="border:0; border-radius: 16px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Lokasi Kahfi Konveksi Kartasura">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MITRA / KLIEN TERPERCAYA SECTION -->
+    <section id="mitra" class="partners-section">
+        <div class="container reveal">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fas fa-handshake"></i> Kepercayaan Pelanggan</span>
+                <h2 class="section-title">Mitra & Klien Kahfi Konveksi</h2>
+                <p class="section-desc">Telah dipercaya oleh berbagai instansi pemerintah, BUMN, perguruan tinggi, organisasi mahasiswa, sekolah, hingga perusahaan swasta di seluruh Indonesia.</p>
+            </div>
+
+            <div class="partners-card">
+                <div class="partners-img-wrapper">
+                    <img src="mitra.png" alt="Daftar Logo Mitra dan Klien Kahfi Konveksi" class="partners-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACT & FOOTER SECTION -->
     <section id="kontak" class="contact-section">
         <div class="container reveal">
@@ -496,13 +625,18 @@
                     <i class="fab fa-instagram fa-lg"></i>
                     <span>@kahfi.konveksi</span>
                 </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Kahfi+Konveksi+Gg.+Sayuran+III+RT.02/RW.09+Dusun+IV+Kartasura+Sukoharjo" target="_blank" class="card-link maps">
+                    <i class="fas fa-map-marker-alt fa-lg"></i>
+                    <span>Google Maps Workshop</span>
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Kahfi Konveksi. All Rights Reserved. Masterpiece Garment & Apparel Production.</p>
+            <p>&copy; 2026 Kahfi Konveksi. All Rights Reserved. Gg. Sayuran III, RT.02/RW.09, Dusun IV, Kartasura, Sukoharjo, Jawa Tengah 57161 &bull; Rating 5,0 ★ (135 Ulasan Google)</p>
         </div>
     </footer>
     <!-- FLOATING ACTIONS -->

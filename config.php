@@ -13,6 +13,34 @@ $ig_username = "kahfi.konveksi";
 $ig_link = "https://instagram.com/" . $ig_username;
 $current_year = date("Y");
 
+// Google Business Profile & Rating Data
+$google_rating = "5,0";
+$google_reviews_count = 135;
+$google_maps_address = "Gg. Sayuran III, RT.02/RW.09, Dusun IV, Kartasura, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57161, Indonesia";
+$google_maps_short_address = "Gg. Sayuran III, RT.02/RW.09, Dusun IV, Kartasura, Sukoharjo, Jawa Tengah 57161";
+$google_maps_search_url = "https://www.google.com/maps/search/?api=1&query=Kahfi+Konveksi+Gg.+Sayuran+III+RT.02/RW.09+Dusun+IV+Kartasura+Sukoharjo";
+$google_maps_embed_url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.056606822838!2d110.74102927499696!3d-7.568772092445199!2m3!1f0!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a151b752765d7%3A0x6a6d6d3765e9c0b1!2sKartasura%2C%20Sukoharjo!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid";
+
+// Featured Google Reviews
+$google_reviews = [
+    [
+        'name' => 'Gideon',
+        'reviews_count' => '1 ulasan',
+        'rating' => 5,
+        'time' => 'sebulan lalu',
+        'text' => 'pelayanan di kahfi knveksi sangat baik dan responsif. hasil konveksinya juga rapi, sesuai pesanan, dan kualitas bahannya bagus.',
+        'avatar' => 'https://ui-avatars.com/api/?name=Gideon&background=eab308&color=0f172a&bold=true'
+    ],
+    [
+        'name' => 'Komunitas Kartasura',
+        'reviews_count' => '3 ulasan',
+        'rating' => 5,
+        'time' => '2 bulan lalu',
+        'text' => 'Pemesanan kemeja PDH dan kaos cepat selesai, jahitan rapi banget, respon admin cepat & ramah recommended bgt!',
+        'avatar' => 'https://ui-avatars.com/api/?name=Komunitas+Kartasura&background=3b82f6&color=ffffff&bold=true'
+    ]
+];
+
 // Helper function to safely scan image files for galleries
 function get_gallery_images($dir) {
     $dir_path = __DIR__ . '/' . $dir;
@@ -59,8 +87,7 @@ $nav_links = [
     '#layanan' => 'Layanan',
     '#bahan' => 'Bahan Kain',
     '#produk' => 'Katalog',
-    '#alur' => 'Alur Order',
-    '#faq' => 'FAQ'
+    '#alur' => 'Alur Order'
 ];
 
 // Marquee announcements
@@ -318,8 +345,8 @@ $timeline_steps = [
 // Stats Counters
 $stats = [
     ['target' => 10000, 'suffix' => '+', 'label' => 'Pcs Seragam Diproduksi'],
+    ['target' => 135, 'suffix' => '+', 'label' => 'Ulasan Bintang 5 di Google Maps'],
     ['target' => 200, 'suffix' => '+', 'label' => 'Klien Instansi & Komunitas'],
-    ['target' => 99, 'suffix' => '.8%', 'label' => 'Ketepatan Waktu Delivery'],
     ['target' => 100, 'suffix' => '%', 'label' => 'Garansi Kualitas Retur']
 ];
 

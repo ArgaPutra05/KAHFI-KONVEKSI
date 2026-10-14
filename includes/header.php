@@ -41,9 +41,6 @@
                 <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Ubah Mode Gelap / Terang">
                     <i class="fas fa-moon"></i>
                 </button>
-                <a href="<?php echo $wa_link; ?>" target="_blank" class="btn-primary">
-                    <i class="fab fa-whatsapp"></i> Konsultasi WA
-                </a>
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
                     <i class="fas fa-bars"></i>
                 </button>

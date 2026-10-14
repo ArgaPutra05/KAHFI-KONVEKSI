@@ -13,4 +13,5 @@ require_once __DIR__ . '/includes/alur.php';
 require_once __DIR__ . '/includes/stats.php';
 require_once __DIR__ . '/includes/faq.php';
 require_once __DIR__ . '/includes/kontak.php';
+require_once __DIR__ . '/includes/mitra.php';
 require_once __DIR__ . '/includes/footer.php';

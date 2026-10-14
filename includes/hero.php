@@ -12,8 +12,8 @@
                     <a href="<?php echo $wa_link; ?>" target="_blank" class="btn-primary">
                         <i class="fab fa-whatsapp"></i> Order via WhatsApp
                     </a>
-                    <a href="#produk" class="btn-secondary">
-                        <i class="fas fa-images"></i> Lihat Hasil Produksi
+                    <a href="#lokasi" class="btn-secondary">
+                        <i class="fas fa-map-marker-alt"></i> Lokasi & Rating Google
                     </a>
                 </div>
             </div>
@@ -30,11 +30,11 @@
                         <strong>10.000+ Pcs</strong>
                     </div>
                 </div>
-                <div class="hero-badge-float bottom-left">
-                    <div class="badge-icon"><i class="fas fa-star"></i></div>
+                <div class="hero-badge-float bottom-left google-hero-badge">
+                    <div class="badge-icon google-icon"><i class="fab fa-google"></i></div>
                     <div class="badge-text">
-                        <span>Kepuasan Pelanggan</span>
-                        <strong>99.8% Rating High</strong>
+                        <span>Google Business Rating</span>
+                        <strong><?php echo $google_rating; ?> <i class="fas fa-star" style="color: #eab308; font-size: 13px;"></i> (<?php echo $google_reviews_count; ?> Ulasan)</strong>
                     </div>
                 </div>
             </div>
