@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="8D04DyFFHubMKFn4sfdSVTuq4XK_Eosl85Vh9dGyHXU" />
     <title><?php echo htmlspecialchars($site_name); ?> - <?php echo htmlspecialchars($site_tagline); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($site_name); ?> adalah pusat pembuatan seragam, kemeja PDH/PDL, kaos, jaket, dan jas almamater berkualitas tinggi dengan harga konveksi terjangkau dan garansi 100%.">
     <link rel="stylesheet" href="style.css?v=<?php echo filemtime(__DIR__ . '/../style.css'); ?>">
