@@ -69,8 +69,17 @@ $jersey_images_list = !empty($jersey_images_files) ? implode('|', $jersey_images
 $jersey_first_img = !empty($jersey_images_files) ? $jersey_images_files[0] : 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=600';
 
 $almamater_images_files = get_gallery_images('almamater');
-$almamater_images_list = !empty($almamater_images_files) ? implode('|', $almamater_images_files) : 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800';
-$almamater_first_img = !empty($almamater_images_files) ? $almamater_images_files[0] : 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600';
+// Gambar cover almamater diatur manual ke file kedua (foto nyata jas almamater)
+$almamater_cover_img = 'almamater/Gemini_Generated_Image_6fxrmv6fxrmv6fxr.jpg.jpe';
+// Susun ulang daftar galeri agar cover tampil pertama, lalu sisanya
+if (!empty($almamater_images_files)) {
+    $almamater_rest = array_filter($almamater_images_files, fn($f) => $f !== $almamater_cover_img);
+    $almamater_images_ordered = array_merge([$almamater_cover_img], array_values($almamater_rest));
+    $almamater_images_list = implode('|', $almamater_images_ordered);
+} else {
+    $almamater_images_list = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800';
+}
+$almamater_first_img = !empty($almamater_images_files) ? $almamater_cover_img : 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600';
 
 $kaos_images_files = get_gallery_images('kaos');
 $kaos_images_list = !empty($kaos_images_files) ? implode('|', $kaos_images_files) : 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800|https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=800';
